@@ -3,25 +3,25 @@ import { Badge } from "@/components/ui/badge";
 
 const categories = [
   {
-    title: "Budget Electronics",
+    title: "Budget Products",
     subtitle: "Best Value",
-    description: "Enjoy Quality Tech As Low As $29!",
+    description: "Enjoy Quality Products As Low As $29!",
     badge: "Best Value!",
     badgeColor: "bg-green-500",
     buttonText: "Shop Now →",
   },
   {
-    title: "Premium Gadgets",
+    title: "Premium Sets",
     subtitle: "Premium Quality",
-    description: "We Offer Cutting-Edge Tech, Latest Models & More.",
+    description: "We Offer High-Quality Sets, Latest Collections & More.",
     badge: "Premium Quality",
     badgeColor: "bg-blue-500",
     buttonText: "Shop Now →",
   },
   {
-    title: "Home Essentials",
+    title: "Bundle Deals",
     subtitle: "Fresh & Delicious",
-    description: "Shop From Kitchen Appliances, Home Decor & More.",
+    description: "Shop From Special Bundles, Combo Packs & More.",
     badge: "Fresh & Delicious",
     badgeColor: "bg-orange-500",
     buttonText: "Shop Now →",

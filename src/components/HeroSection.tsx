@@ -9,23 +9,24 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-6">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-              KEO 2ML, 3ML or 6ML Premium Devices
+              Mix & Match
             </div>
             
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 Save Up to{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  30% OFF
+                  45% OFF
                 </span>
               </h1>
               
               <div className="space-y-1 text-lg text-muted-foreground">
-                <p>Buy 3+ = 5% OFF</p>
-                <p>Buy 5+ = 7% OFF</p>
-                <p>Buy 10+ = 15% OFF</p>
-                <p>Buy 25+ = 20% OFF</p>
-                <p>Buy 50+ = 30% OFF</p>
+                <p>45% OFF 8+ Items</p>
+                <p>35% OFF 3+ Items</p>
+                <p>15% OFF 2+ Items</p>
+                <p>15% OFF 4+ Bundles</p>
+                <p>10% OFF 2+ Bundles</p>
+                <p>7.5% OFF 2+ Premium Sets</p>
               </div>
             </div>
 
@@ -36,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              *Discount will be calculated at cart page*
+              *Only Applicable With Selected Products*
             </p>
           </div>
 
