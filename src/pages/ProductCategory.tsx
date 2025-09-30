@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Heart, Star, Grid, List } from "lucide-react";
+import { Heart, Star, Grid, List, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 
 const products = [
@@ -248,6 +248,16 @@ const ProductCategory = () => {
                         alt={product.name}
                         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
+                      
+                      {/* Add to Cart Button */}
+                      <Button
+                        variant="hero"
+                        size="sm"
+                        className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      >
+                        <ShoppingCart className="h-4 w-4 mr-2" />
+                        Add to Cart
+                      </Button>
                     </div>
 
                     {/* Product Info */}
