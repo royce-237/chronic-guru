@@ -170,13 +170,10 @@ const ProductDetail = () => {
 
               {/* Product Details */}
               <div className="space-y-2 text-sm">
-                <div><strong>Bud Size:</strong> {product.budSize}</div>
-                <div><strong>Ratings:</strong> {product.ratings}</div>
-                <div><strong>Texture:</strong> {product.texture}</div>
-                <div><strong>Flavour:</strong> {product.flavour}</div>
-                <div><strong>Medical Usage:</strong> {product.medicalUsage}</div>
-                <div><strong>THC:</strong> {product.thc} <strong>CBD:</strong> {product.cbd}</div>
-                <div><strong>Batch:</strong> {product.batch}</div>
+                {product.colour && <div><strong>Colour:</strong> {product.colour}</div>}
+                {product.flavour && <div><strong>Flavour:</strong> {product.flavour}</div>}
+                {product.thc && <div><strong>THC:</strong> {product.thc}</div>}
+                {product.cbd && <div><strong>CBD:</strong> {product.cbd}</div>}
               </div>
 
               {/* Price */}
