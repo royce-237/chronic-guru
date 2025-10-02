@@ -325,11 +325,83 @@ const ProductDetail = () => {
               </TabsContent>
               
               <TabsContent value="reviews" className="mt-6">
-                <p className="text-muted-foreground">No reviews yet. Be the first to review this product!</p>
+                <div className="space-y-8">
+                  {/* Reviews Summary */}
+                  <div className="flex gap-8 items-start">
+                    <div className="text-center">
+                      <div className="text-5xl font-bold text-foreground mb-2">{product.rating.toFixed(2)}</div>
+                      <div className="flex justify-center mb-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`w-5 h-5 ${
+                              i < product.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <div className="text-sm text-muted-foreground">Average of {product.reviews} reviews</div>
+                    </div>
+                    
+                    <div className="flex-1 space-y-2">
+                      {[5, 4, 3, 2, 1].map((star) => (
+                        <div key={star} className="flex items-center gap-2">
+                          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                          <span className="text-sm w-3">{star}</span>
+                          <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                            <div 
+                              className="h-full bg-yellow-400" 
+                              style={{ width: star === 5 ? '100%' : '0%' }}
+                            />
+                          </div>
+                          <span className="text-sm text-muted-foreground w-8 text-right">
+                            {star === 5 ? product.reviews : 0}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Individual Reviews */}
+                  <div className="space-y-6 border-t pt-6">
+                    {product.reviews > 0 && (
+                      <div className="space-y-4">
+                        <div className="flex gap-4">
+                          <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-muted-foreground">
+                            <span className="text-sm">O</span>
+                          </div>
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2 mb-1">
+                              <div className="flex">
+                                {[...Array(5)].map((_, i) => (
+                                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                ))}
+                              </div>
+                            </div>
+                            <div className="text-sm font-medium text-foreground mb-1">
+                              Olivier Banville <span className="text-muted-foreground font-normal">– May 7, 2023</span>
+                            </div>
+                            <p className="text-sm text-muted-foreground">Bonne brume</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Add Review Section */}
+                  <div className="border-t pt-6">
+                    <h3 className="text-xl font-bold text-foreground mb-4">Add a review</h3>
+                    <p className="text-sm text-muted-foreground">
+                      You must be <span className="text-green-600">logged in</span> to post a review.
+                    </p>
+                  </div>
+                </div>
               </TabsContent>
               
               <TabsContent value="refer" className="mt-6">
-                <p className="text-muted-foreground">Refer a friend and get rewards! Contact us for more information.</p>
+                <div className="bg-green-50 border border-green-200 rounded p-4 text-green-700">
+                  Please <span className="font-medium">register</span> to get your referral link.
+                </div>
               </TabsContent>
             </Tabs>
           </div>
