@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Minus, Plus, ShoppingCart } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Star, Minus, Plus, ShoppingCart, Heart } from "lucide-react";
 import { useState } from "react";
 
 // Product data (in real app, this would come from an API or database)
@@ -247,10 +248,155 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          {/* Product Description */}
-          <div className="mt-12 prose prose-sm max-w-none">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Description</h2>
-            <p className="text-muted-foreground">{product.description}</p>
+          {/* Tabs Section */}
+          <div className="mt-12">
+            <Tabs defaultValue="description" className="w-full">
+              <TabsList className="w-full justify-start border-b rounded-none h-auto p-0 bg-transparent">
+                <TabsTrigger 
+                  value="description" 
+                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent"
+                >
+                  Description
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="additional" 
+                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent"
+                >
+                  Additional information
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="reviews" 
+                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent"
+                >
+                  Reviews ({product.reviews})
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="refer" 
+                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent"
+                >
+                  Refer a Friend
+                </TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="description" className="mt-6">
+                <div className="prose prose-sm max-w-none">
+                  <h2 className="text-2xl font-bold text-foreground mb-4">
+                    Buy {product.name} Exclusively At Bulk Buddy's Curated Online Dispensary Canada.
+                  </h2>
+                  <p className="text-muted-foreground">{product.description}</p>
+                </div>
+              </TabsContent>
+              
+              <TabsContent value="additional" className="mt-6">
+                <div className="space-y-3 text-sm">
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">Bud Size:</span>
+                    <span className="text-muted-foreground">{product.budSize}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">Ratings:</span>
+                    <span className="text-muted-foreground">{product.ratings}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">Texture:</span>
+                    <span className="text-muted-foreground">{product.texture}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">Flavour:</span>
+                    <span className="text-muted-foreground">{product.flavour}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">Medical Usage:</span>
+                    <span className="text-muted-foreground">{product.medicalUsage}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">THC:</span>
+                    <span className="text-muted-foreground">{product.thc}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
+                    <span className="font-medium">CBD:</span>
+                    <span className="text-muted-foreground">{product.cbd}</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 py-2">
+                    <span className="font-medium">Batch:</span>
+                    <span className="text-muted-foreground">{product.batch}</span>
+                  </div>
+                </div>
+              </TabsContent>
+              
+              <TabsContent value="reviews" className="mt-6">
+                <p className="text-muted-foreground">No reviews yet. Be the first to review this product!</p>
+              </TabsContent>
+              
+              <TabsContent value="refer" className="mt-6">
+                <p className="text-muted-foreground">Refer a friend and get rewards! Contact us for more information.</p>
+              </TabsContent>
+            </Tabs>
+          </div>
+
+          {/* Related Products */}
+          <div className="mt-16">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Related products</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {Object.values(productData).filter(p => p.id !== product.id).slice(0, 6).map((relatedProduct: any) => (
+                <div key={relatedProduct.id} className="group relative bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                  <button className="absolute top-2 right-2 z-10 bg-white rounded-full p-1.5 hover:bg-gray-100 transition-colors">
+                    <Heart className="h-4 w-4 text-gray-600" />
+                  </button>
+                  
+                  <div className="aspect-square overflow-hidden bg-gray-100">
+                    <img
+                      src={relatedProduct.image}
+                      alt={relatedProduct.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  
+                  <div className="p-3">
+                    <h3 className="text-xs font-medium text-foreground mb-1 line-clamp-2 min-h-[2rem]">
+                      {relatedProduct.name}
+                    </h3>
+                    
+                    <div className="flex items-center gap-1 mb-2">
+                      <div className="flex">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`w-3 h-3 ${
+                              i < relatedProduct.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-xs text-muted-foreground">{relatedProduct.reviews}</span>
+                    </div>
+                    
+                    <div className="text-sm font-bold text-foreground mb-2">
+                      {relatedProduct.priceRange || `$${relatedProduct.price.toFixed(2)}`}
+                    </div>
+                    
+                    <Button 
+                      size="sm" 
+                      className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-8"
+                      onClick={() => {
+                        const slug = relatedProduct.name
+                          .toLowerCase()
+                          .replace(/[|]/g, '')
+                          .replace(/[^\w\s-]+/g, '')
+                          .replace(/\s+/g, '-')
+                          .replace(/-+/g, '-')
+                          .trim();
+                        navigate(`/product/${slug}`, { state: { product: relatedProduct } });
+                        window.scrollTo(0, 0);
+                      }}
+                    >
+                      <ShoppingCart className="h-3 w-3 mr-1" />
+                      IN STOCK
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </main>
