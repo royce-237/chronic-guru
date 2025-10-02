@@ -289,37 +289,9 @@ const ProductDetail = () => {
               
               <TabsContent value="additional" className="mt-6">
                 <div className="space-y-3 text-sm">
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">Bud Size:</span>
-                    <span className="text-muted-foreground">{product.budSize}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">Ratings:</span>
-                    <span className="text-muted-foreground">{product.ratings}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">Texture:</span>
-                    <span className="text-muted-foreground">{product.texture}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">Flavour:</span>
-                    <span className="text-muted-foreground">{product.flavour}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">Medical Usage:</span>
-                    <span className="text-muted-foreground">{product.medicalUsage}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">THC:</span>
-                    <span className="text-muted-foreground">{product.thc}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 border-b">
-                    <span className="font-medium">CBD:</span>
-                    <span className="text-muted-foreground">{product.cbd}</span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 py-2">
-                    <span className="font-medium">Batch:</span>
-                    <span className="text-muted-foreground">{product.batch}</span>
+                  <div className="grid grid-cols-2 gap-4 py-3">
+                    <span className="font-medium text-foreground">Quantity</span>
+                    <span className="text-muted-foreground">2 Ounces, 2 Grams, 3.5 Grams, 7 Grams, 14 Grams, 1 Ounce</span>
                   </div>
                 </div>
               </TabsContent>
