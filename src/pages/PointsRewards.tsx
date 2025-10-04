@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/rewards-hero.png";
 import heroBg from "@/assets/points-hero-bg.jpg";
+import bbPointsReview from "@/assets/bb-points-review.jpg";
+import referFriendBanner from "@/assets/refer-friend-banner.jpg";
 
 const PointsRewards = () => {
   return (
@@ -33,9 +34,14 @@ const PointsRewards = () => {
           </p>
         </div>
 
-        {/* Hero Image */}
-        <div className="mb-16">
-          <img src={heroImage} alt="BB Points and Refer a Friend Program" className="w-full rounded-lg shadow-lg" />
+        {/* Two Images Side by Side */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div>
+            <img src={bbPointsReview} alt="50 BB Point Review a product" className="w-full rounded-lg shadow-lg" />
+          </div>
+          <div>
+            <img src={referFriendBanner} alt="Refer a Friend Program" className="w-full rounded-lg shadow-lg" />
+          </div>
         </div>
 
         {/* BB Points Section */}
