@@ -1,156 +1,234 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, MessageCircle } from "lucide-react";
+import { Mail, Facebook, Twitter, Send, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
         {/* Help Section */}
-        <div className="mb-12">
-          <h3 className="font-bold text-lg text-card-foreground mb-6">Do You Need Help ?</h3>
-          <p className="text-muted-foreground mb-6">We offer Chat & Email Support.</p>
-          
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Chat Support */}
-            <div className="flex items-center gap-4 p-4 border rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                <MessageCircle className="h-6 w-6 text-primary" />
+        <div className="grid lg:grid-cols-[1fr_4fr] gap-12 mb-12">
+          {/* Left - Help */}
+          <div>
+            <h3 className="font-bold text-lg text-card-foreground mb-3">Do You Need Help ?</h3>
+            <p className="text-muted-foreground mb-6 text-sm">We offer Chat & Email Support.</p>
+            
+            <div className="space-y-6">
+              {/* Online Chat Support */}
+              <div className="flex items-start gap-3">
+                <MessageCircle className="h-5 w-5 text-muted-foreground mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Mon – Fri: 9am – 10pm PST</p>
+                  <p className="text-sm text-muted-foreground mb-2">Sat & Sun: 11am – 10pm PST</p>
+                  <h4 className="font-semibold text-card-foreground text-base">Online Chat Support</h4>
+                </div>
               </div>
-              <div>
-                <h4 className="font-semibold text-card-foreground">Online Chat Support</h4>
-                <p className="text-sm text-muted-foreground">Mon – Fri: 9am – 10pm PST</p>
-                <p className="text-sm text-muted-foreground">Sat & Sun: 11am – 10pm PST</p>
+
+              {/* Email Support */}
+              <div className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-muted-foreground mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Need help with your order?</p>
+                  <p className="text-sm font-medium text-card-foreground">info@bulkbuddy.co</p>
+                </div>
               </div>
             </div>
 
-            {/* Email Support */}
-            <div className="flex items-center gap-4 p-4 border rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Mail className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-card-foreground">Need help with your order?</h4>
-                <p className="text-sm text-primary">info@bulkbuddy.co</p>
-                <p className="text-sm text-muted-foreground">Response within 1-2 business days</p>
+            <div className="mt-6">
+              <p className="text-sm text-muted-foreground mb-3">Follow us on social media:</p>
+              <div className="flex gap-2">
+                <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Facebook className="h-4 w-4" />
+                </Button>
+                <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Twitter className="h-4 w-4" />
+                </Button>
+                <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <MessageCircle className="h-4 w-4" />
+                </Button>
+                <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Send className="h-4 w-4" />
+                </Button>
               </div>
             </div>
           </div>
 
-          <p className="text-sm text-muted-foreground mb-4">Follow us on social media:</p>
-          <div className="flex gap-2">
-            <Button variant="ghost" size="icon">
-              <Facebook className="h-4 w-4" />
-            </Button>
-            <Button variant="ghost" size="icon">
-              <Twitter className="h-4 w-4" />
-            </Button>
-            <Button variant="ghost" size="icon">
-              <Instagram className="h-4 w-4" />
-            </Button>
+          {/* Right - Links Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {/* Cannabis */}
+            <div>
+              <h4 className="font-semibold text-card-foreground mb-4">Cannabis</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  $39-$129/oz (Budget Buds)
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Craft Cannabis Flowers
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  AAAA Weed
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  AAA Weed
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  AA Weed
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Indica
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Sativa
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Hybrid
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Pre-rolls
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Shake / trim
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  View All Cannabis
+                </Button>
+              </div>
+            </div>
+
+            {/* Concentrates */}
+            <div>
+              <h4 className="font-semibold text-card-foreground mb-4">Concentrates</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Shatter
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Budder
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  THCa Diamond
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Distillate
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Hash
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Kief
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Vapes
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  View All Concentrates
+                </Button>
+              </div>
+            </div>
+
+            {/* Edibles & Accessories */}
+            <div>
+              <h4 className="font-semibold text-card-foreground mb-4">Edibles</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Candy
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Capsules
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Chocolate & Baked Goods
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Tinctures & Oils
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  View All Edibles
+                </Button>
+              </div>
+
+              <h4 className="font-semibold text-card-foreground mb-4 mt-6">Accessories</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Rolling Paper & Filters Tips
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  View All Accessories
+                </Button>
+              </div>
+            </div>
+
+            {/* Useful Links */}
+            <div>
+              <h4 className="font-semibold text-card-foreground mb-4">Useful Links</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  About Us
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  FAQ
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Blog
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Contact Us
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Refer A Friend
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Shopping cart
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Cart
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Checkout
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  My Account
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  My Orders
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Order Tracking
+                </Button>
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  Wishlist
+                </Button>
+              </div>
+            </div>
+
+            {/* CBD */}
+            <div>
+              <h4 className="font-semibold text-card-foreground mb-4">CBD</h4>
+              <div className="space-y-2">
+                <Button variant="link" className="h-auto p-0 text-sm text-muted-foreground hover:text-card-foreground justify-start">
+                  View All CBD
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
 
         <Separator className="my-8" />
 
-        {/* Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Electronics */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">Electronics</h4>
-            <div className="space-y-2">
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Budget Electronics
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Premium Gadgets
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Smart Devices
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Gaming
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                View All Electronics
-              </Button>
-            </div>
-          </div>
-
-          {/* Home & Garden */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">Home & Garden</h4>
-            <div className="space-y-2">
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Kitchen Appliances
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Home Decor
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Garden Tools
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Storage
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                View All Home
-              </Button>
-            </div>
-          </div>
-
-          {/* Fashion */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">Fashion</h4>
-            <div className="space-y-2">
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Clothing
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Shoes
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Accessories
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Bags
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                View All Fashion
-              </Button>
-            </div>
-          </div>
-
-          {/* Useful Links */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">Useful Links</h4>
-            <div className="space-y-2">
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                About Us
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                FAQ
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Contact Us
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                My Account
-              </Button>
-              <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground justify-start">
-                Order Tracking
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        <Separator className="my-8" />
-
+        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            Copyright 2024 © Bulk Buddy. All Rights Reserved.
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              Copyright 2024 © Bulk Buddy. All Rights Reserved.
+            </p>
+            <div className="flex items-center gap-2">
+              <div className="bg-primary/10 px-3 py-1 rounded text-xs font-medium">E-transfer</div>
+              <div className="flex items-center gap-1 text-orange-500 font-bold text-sm">
+                <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs">₿</div>
+                <span>bitcoin</span>
+              </div>
+            </div>
+          </div>
           <div className="flex gap-4 text-sm">
             <Button variant="link" className="h-auto p-0 text-muted-foreground hover:text-card-foreground">
               Terms and Conditions
