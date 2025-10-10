@@ -2,6 +2,13 @@ import { Heart, Star, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const cannabisProducts = [
   {
@@ -232,89 +239,98 @@ const ProductGrid = () => {
         </Button>
       </div>
 
-      {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="group bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
-          >
-            {/* Product Image */}
-            <div className="relative aspect-square overflow-hidden">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              
-              {/* Wishlist Button */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute top-2 right-2 h-8 w-8 bg-white/80 hover:bg-white"
-              >
-                <Heart className="h-4 w-4" />
-              </Button>
+      {/* Product Carousel */}
+      <Carousel
+        opts={{
+          align: "start",
+          loop: false,
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-4">
+          {products.map((product) => (
+            <CarouselItem key={product.id} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/6">
+              <div className="group bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
+                {/* Product Image */}
+                <div className="relative w-full h-[200px] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  
+                  {/* Wishlist Button */}
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute top-2 right-2 h-8 w-8 bg-white/80 hover:bg-white"
+                  >
+                    <Heart className="h-4 w-4" />
+                  </Button>
 
-              {/* Badge */}
-              {product.badge && (
-                <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground">
-                  {product.badge}
-                </Badge>
-              )}
+                  {/* Badge */}
+                  {product.badge && (
+                    <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground">
+                      {product.badge}
+                    </Badge>
+                  )}
 
-              {/* Add to Cart Button */}
-              <Button
-                variant="hero"
-                size="sm"
-                className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                onClick={() => handleProductClick(product)}
-              >
-                <ShoppingCart className="h-4 w-4 mr-2" />
-                Add to Cart
-              </Button>
-            </div>
-
-            {/* Product Info */}
-            <div className="p-4 space-y-2">
-              <h3 className="font-medium text-card-foreground text-sm leading-tight">
-                {product.name}
-              </h3>
-              
-              {/* Rating */}
-              <div className="flex items-center gap-1">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`h-3 w-3 ${
-                        i < Math.floor(product.rating)
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
+                  {/* Add to Cart Button */}
+                  <Button
+                    variant="hero"
+                    size="sm"
+                    className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    onClick={() => handleProductClick(product)}
+                  >
+                    <ShoppingCart className="h-4 w-4 mr-2" />
+                    Add to Cart
+                  </Button>
                 </div>
-                <span className="text-xs text-muted-foreground">
-                  {product.reviews}
-                </span>
-              </div>
 
-              {/* Price */}
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-primary">
-                  ${product.price}
-                </span>
-                {product.originalPrice && (
-                  <span className="text-xs text-muted-foreground line-through">
-                    ${product.originalPrice}
-                  </span>
-                )}
+                {/* Product Info */}
+                <div className="p-3 space-y-2">
+                  <h3 className="font-medium text-card-foreground text-sm leading-tight line-clamp-2">
+                    {product.name}
+                  </h3>
+                  
+                  {/* Rating */}
+                  <div className="flex items-center gap-1">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`h-3 w-3 ${
+                            i < Math.floor(product.rating)
+                              ? "fill-yellow-400 text-yellow-400"
+                              : "text-gray-300"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-xs text-muted-foreground">
+                      {product.reviews}
+                    </span>
+                  </div>
+
+                  {/* Price */}
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold text-primary">
+                      ${product.price}
+                    </span>
+                    {product.originalPrice && (
+                      <span className="text-xs text-muted-foreground line-through">
+                        ${product.originalPrice}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="-left-4" />
+        <CarouselNext className="-right-4" />
+      </Carousel>
     </div>
   );
 
