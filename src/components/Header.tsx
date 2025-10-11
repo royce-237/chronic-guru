@@ -70,14 +70,14 @@ const Header = () => {
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="sm" className="whitespace-nowrap gap-2">
                     <Grid2x2 className="h-4 w-4" />
-                    All Categories
+                    Shop
                     <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-56 bg-background z-50">
                   <DropdownMenuItem className="cursor-pointer" asChild>
                     <a href="/product-category/cannabis" className="flex items-center w-full">
-                      <span className="flex-1">Cannabis</span>
+                      <span className="flex-1">Flower</span>
                       <ChevronRight className="h-4 w-4" />
                     </a>
                   </DropdownMenuItem>
