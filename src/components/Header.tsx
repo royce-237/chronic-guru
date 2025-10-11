@@ -76,33 +76,37 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-56 bg-background z-50">
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/product-category/cannabis" className="flex items-center w-full">
-                      <span className="flex-1">Flower</span>
-                      <ChevronRight className="h-4 w-4" />
+                    <a href="/product-category/cannabis" className="w-full">
+                      Flower
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/product-category/concentrates" className="flex items-center w-full">
-                      <span className="flex-1">Concentrates</span>
-                      <ChevronRight className="h-4 w-4" />
+                    <a href="/product-category/edibles" className="w-full">
+                      Edibles
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
-                    <span className="flex-1">Vapes</span>
+                    Gummies
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
-                    <span className="flex-1">Edibles</span>
-                    <ChevronRight className="h-4 w-4" />
+                    Cartridges
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
-                    <span className="flex-1">CBD</span>
+                    Pre-Rolls
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer" asChild>
+                    <a href="/product-category/concentrates" className="w-full">
+                      Concentrates
+                    </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
-                    <span className="flex-1">Accessories</span>
-                    <ChevronRight className="h-4 w-4" />
+                    Drinks
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
-                    <span className="flex-1">Sale</span>
+                    Merch
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer">
+                    Shop All Products
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
