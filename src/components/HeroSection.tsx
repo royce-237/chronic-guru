@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import heroImage from "@/assets/hero-products.jpg";
+import mainImage from "@/assets/main.png";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -53,9 +53,9 @@ const HeroSection = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-3xl"></div>
             <img
-              src={heroImage}
+              src={mainImage}
               alt="Premium Products"
-              className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+              className="relative w-full h-auto object-cover"
             />
           </div>
         </div>

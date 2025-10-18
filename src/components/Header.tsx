@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import logo from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -26,9 +27,8 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/">
-                <img src={logo} alt="Chronic Guru" className="h-8 w-auto" />
-              </a>
+              <Link to="/">
+</Link>
             </div>
 
             {/* Search Bar */}
@@ -76,31 +76,39 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-56 bg-background z-50">
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/product-category/cannabis" className="w-full">
+                    <Link to="/product-category/cannabis" className="w-full">
                       Flower
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/product-category/edibles" className="w-full">
+                    <Link to="/product-category/edibles" className="w-full">
                       Edibles
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    Gummies
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    Cartridges
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    Pre-Rolls
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/product-category/concentrates" className="w-full">
-                      Concentrates
-                    </a>
+                    <Link to="/gummies" className="w-full">
+                      Gummies
+                    </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    Drinks
+                  <DropdownMenuItem className="cursor-pointer" asChild>
+                    <Link to="/cartridges" className="w-full">
+                      Cartridges
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer" asChild>
+                    <Link to="/pre-rolls" className="w-full">
+                      Pre-Rolls
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer" asChild>
+                    <Link to="/product-category/concentrates" className="w-full">
+                      Concentrates
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer" asChild>
+                    <Link to="/drinks" className="w-full">
+                      Drinks
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
                     Merch
@@ -119,30 +127,30 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-56 bg-background z-50">
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/about-us" className="w-full">
+                    <Link to="/about-us" className="w-full">
                       Our Story
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/our-history" className="w-full">
+                    <Link to="/our-history" className="w-full">
                       Our History
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer" asChild>
-                    <a href="/reviews" className="w-full">
+                    <Link to="/reviews" className="w-full">
                       Reviews
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <Button variant="ghost" size="sm" className="whitespace-nowrap" asChild>
-                <a href="/faq">FAQ</a>
+                <Link to="/faq">FAQ</Link>
               </Button>
               <Button variant="ghost" size="sm" className="whitespace-nowrap" asChild>
-                <a href="/points-rewards">Points & Rewards</a>
+                <Link to="/points-rewards">Points & Rewards</Link>
               </Button>
               <Button variant="ghost" size="sm" className="whitespace-nowrap" asChild>
-                <a href="/contact-us">Contact Us</a>
+                <Link to="/contact-us">Contact Us</Link>
               </Button>
               <div className="ml-auto">
                 <Button variant="ghost" size="sm" className="text-destructive font-medium">

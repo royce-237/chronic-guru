@@ -268,6 +268,71 @@ const ProductDetail = () => {
             </div>
           </div>
 
+            {/* Related Products */}
+            <div className="mt-16 border">
+                <h2 className="text-2xl text-center font-bold text-foreground mb-6 underline">Related products</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    {Object.values(productData).filter(p => p.id !== product.id).slice(0, 6).map((relatedProduct: any) => (
+                        <div key={relatedProduct.id} className="group relative bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                            <button className="absolute top-2 right-2 z-10 bg-white rounded-full p-1.5 hover:bg-gray-100 transition-colors">
+                                <Heart className="h-4 w-4 text-gray-600" />
+                            </button>
+
+                            <div className="aspect-square overflow-hidden bg-gray-100">
+                                <img
+                                    src={relatedProduct.image}
+                                    alt={relatedProduct.name}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
+                            </div>
+
+                            <div className="p-3">
+                                <h3 className="text-xs font-medium text-foreground mb-1 line-clamp-2 min-h-[2rem]">
+                                    {relatedProduct.name}
+                                </h3>
+
+                                <div className="flex items-center gap-1 mb-2">
+                                    <div className="flex">
+                                        {[...Array(5)].map((_, i) => (
+                                            <Star
+                                                key={i}
+                                                className={`w-3 h-3 ${
+                                                    i < relatedProduct.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                                }`}
+                                            />
+                                        ))}
+                                    </div>
+                                    <span className="text-xs text-muted-foreground">{relatedProduct.reviews}</span>
+                                </div>
+
+                                <div className="text-sm font-bold text-foreground mb-2">
+                                    {relatedProduct.priceRange || `$${relatedProduct.price.toFixed(2)}`}
+                                </div>
+
+                                <Button
+                                    size="sm"
+                                    className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-8"
+                                    onClick={() => {
+                                        const slug = relatedProduct.name
+                                            .toLowerCase()
+                                            .replace(/[|]/g, '')
+                                            .replace(/[^\w\s-]+/g, '')
+                                            .replace(/\s+/g, '-')
+                                            .replace(/-+/g, '-')
+                                            .trim();
+                                        navigate(`/product/${slug}`, { state: { product: relatedProduct } });
+                                        window.scrollTo(0, 0);
+                                    }}
+                                >
+                                    <ShoppingCart className="h-3 w-3 mr-1" />
+                                    IN STOCK
+                                </Button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
           {/* Tabs Section */}
           <div className="mt-12">
             <Tabs defaultValue="description" className="w-full">
@@ -396,71 +461,6 @@ const ProductDetail = () => {
                 </div>
               </TabsContent>
             </Tabs>
-          </div>
-
-          {/* Related Products */}
-          <div className="mt-16">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Related products</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {Object.values(productData).filter(p => p.id !== product.id).slice(0, 6).map((relatedProduct: any) => (
-                <div key={relatedProduct.id} className="group relative bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <button className="absolute top-2 right-2 z-10 bg-white rounded-full p-1.5 hover:bg-gray-100 transition-colors">
-                    <Heart className="h-4 w-4 text-gray-600" />
-                  </button>
-                  
-                  <div className="aspect-square overflow-hidden bg-gray-100">
-                    <img
-                      src={relatedProduct.image}
-                      alt={relatedProduct.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  
-                  <div className="p-3">
-                    <h3 className="text-xs font-medium text-foreground mb-1 line-clamp-2 min-h-[2rem]">
-                      {relatedProduct.name}
-                    </h3>
-                    
-                    <div className="flex items-center gap-1 mb-2">
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-3 h-3 ${
-                              i < relatedProduct.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <span className="text-xs text-muted-foreground">{relatedProduct.reviews}</span>
-                    </div>
-                    
-                    <div className="text-sm font-bold text-foreground mb-2">
-                      {relatedProduct.priceRange || `$${relatedProduct.price.toFixed(2)}`}
-                    </div>
-                    
-                    <Button 
-                      size="sm" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-8"
-                      onClick={() => {
-                        const slug = relatedProduct.name
-                          .toLowerCase()
-                          .replace(/[|]/g, '')
-                          .replace(/[^\w\s-]+/g, '')
-                          .replace(/\s+/g, '-')
-                          .replace(/-+/g, '-')
-                          .trim();
-                        navigate(`/product/${slug}`, { state: { product: relatedProduct } });
-                        window.scrollTo(0, 0);
-                      }}
-                    >
-                      <ShoppingCart className="h-3 w-3 mr-1" />
-                      IN STOCK
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </main>

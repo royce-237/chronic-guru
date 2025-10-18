@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ProductCategory from "./pages/ProductCategory";
 import ProductDetail from "./pages/ProductDetail";
@@ -12,6 +12,11 @@ import PointsRewards from "./pages/PointsRewards";
 import ContactUs from "./pages/ContactUs";
 import OurHistory from "./pages/OurHistory";
 import Reviews from "./pages/Reviews";
+import Gummies from "./pages/Gummies";
+import Cartridges from "./pages/Cartridges";
+import PreRolls from "./pages/PreRolls";
+import Concentrates from "./pages/Concentrates";
+import Drinks from "./pages/Drinks";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,7 +26,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/product-category/:category" element={<ProductCategory />} />
@@ -32,10 +37,15 @@ const App = () => (
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/our-history" element={<OurHistory />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/gummies" element={<Gummies />} />
+          <Route path="/cartridges" element={<Cartridges />} />
+          <Route path="/pre-rolls" element={<PreRolls />} />
+          <Route path="/product-category/concentrates" element={<Concentrates />} />
+          <Route path="/drinks" element={<Drinks />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
