@@ -19,42 +19,49 @@ import Concentrates from "./pages/Concentrates";
 import Drinks from "./pages/Drinks";
 import Merch from "./pages/Merch";
 import Cart from "./pages/Cart";
+import SearchResults from "./pages/SearchResults";
+import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
 
 import { CartProvider } from "./context/CartContext";
+import { WishlistProvider } from "./context/WishlistContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <CartProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <HashRouter>
-          <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/product-category/:category" element={<ProductCategory />} />
-          <Route path="/product/:slug" element={<ProductDetail />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/points-rewards" element={<PointsRewards />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/our-history" element={<OurHistory />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/gummies" element={<Gummies />} />
-          <Route path="/cartridges" element={<Cartridges />} />
-          <Route path="/pre-rolls" element={<PreRolls />} />
-          <Route path="/product-category/concentrates" element={<Concentrates />} />
-          <Route path="/drinks" element={<Drinks />} />
-          <Route path="/merch" element={<Merch />} />
-          <Route path="/cart" element={<Cart />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </HashRouter>
-    </TooltipProvider>
-   </CartProvider>
+      <WishlistProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/product-category/:category" element={<ProductCategory />} />
+              <Route path="/product/:slug" element={<ProductDetail />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/points-rewards" element={<PointsRewards />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/our-history" element={<OurHistory />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/gummies" element={<Gummies />} />
+              <Route path="/cartridges" element={<Cartridges />} />
+              <Route path="/pre-rolls" element={<PreRolls />} />
+              <Route path="/product-category/concentrates" element={<Concentrates />} />
+              <Route path="/drinks" element={<Drinks />} />
+              <Route path="/merch" element={<Merch />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/search" element={<SearchResults />} />
+              <Route path="/wishlist" element={<Wishlist />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </HashRouter>
+        </TooltipProvider>
+      </WishlistProvider>
+    </CartProvider>
   </QueryClientProvider>
 );
 

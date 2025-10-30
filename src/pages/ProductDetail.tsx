@@ -7,6 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Star, Minus, Plus, ShoppingCart, Heart } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
+import { useWishlist } from "../context/WishlistContext";
+import { useToast } from "@/components/ui/use-toast";
 
 import { cannabisProducts, concentratesProducts, ediblesProducts } from "./ProductCategory";
 import { products as cartridgesProducts } from "./Cartridges";
@@ -26,6 +28,8 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedWeight, setSelectedWeight] = useState("3.5 Grams");
   const { addToCart } = useCart();
+  const { toast } = useToast();
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
 
   const stateProduct = (location.state as any)?.product;
   const product = stateProduct ?? allProducts.find(p => {
@@ -108,7 +112,36 @@ const ProductDetail = () => {
         name: product.name,
         price: unitPrice,
         image: productImages[0] || '',
+      }, quantity); // Passer la quantité sélectionnée
+      toast({
+        title: "Added to cart!",
+        description: `${product.name} has been added to your cart.`,
       });
+    }
+  };
+
+  const handleToggleWishlist = () => {
+    if (product) {
+      const itemId = product.id || Date.now() + Math.random();
+      const wishlistItem = {
+        id: itemId,
+        name: product.name,
+        price: unitPrice,
+        image: productImages[0] || '',
+      };
+      if (isInWishlist(itemId)) {
+        removeFromWishlist(itemId);
+        toast({
+          title: "Removed from wishlist",
+          description: `${product.name} has been removed from your wishlist.`,
+        });
+      } else {
+        addToWishlist(wishlistItem);
+        toast({
+          title: "Added to wishlist",
+          description: `${product.name} has been added to your wishlist.`,
+        });
+      }
     }
   };
 
@@ -139,6 +172,12 @@ const ProductDetail = () => {
             <div className="space-y-4">
               {/* Main Image */}
               <div className="relative bg-card rounded-lg overflow-hidden border">
+                <button 
+                  className="absolute top-2 right-2 z-10 bg-white rounded-full p-1.5 hover:bg-gray-100 transition-colors"
+                  onClick={handleToggleWishlist}
+                >
+                  <Heart className={`h-5 w-5 ${isInWishlist(product.id) ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} />
+                </button>
                 <img
                   src={productImages[selectedImage] || ''}
                   alt={product.name}
@@ -309,9 +348,9 @@ const ProductDetail = () => {
                                         <span className="text-xs text-muted-foreground">{relatedProduct.reviews}</span>
                                     </div>
 
-                                                                    <div className="text-sm font-bold text-foreground mb-2">
-                                                                        {relatedProduct.priceRange || (typeof relatedProduct.price === 'number' ? `$${relatedProduct.price.toFixed(2)}` : relatedProduct.price)} 
-                                                                    </div>
+                                    <div className="text-sm font-bold text-foreground mb-2">
+                                        {relatedProduct.priceRange || (typeof relatedProduct.price === 'number' ? `$${relatedProduct.price.toFixed(2)}` : relatedProduct.price)}
+                                    </div>
                                     <Button
                                         size="sm"
                                         className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-8"
