@@ -13,7 +13,7 @@ const Cart = () => {
   const shipping = subtotal > 150 ? 0 : 10; // Exemple: livraison gratuite au-dessus de 150$
   const total = subtotal + shipping;
 
-  const whatsappNumber = "237640088561"; // Numéro WhatsApp fourni par l'utilisateur
+  const whatsappNumber = "18137207509"; // Numéro WhatsApp fourni par l'utilisateur
   const cartSummary = cartItems.map(item => `${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`).join("\n");
   const message = `Hello, I'd like to place an order.\n\nMy Cart:\n${cartSummary}\n\nSubtotal: $${subtotal.toFixed(2)}\nShipping: ${shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}\nTotal: $${total.toFixed(2)}\n\nPlease confirm my order.`;
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
