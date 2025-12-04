@@ -224,7 +224,10 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <div className="bg-primary/10 px-3 py-1 rounded text-xs font-medium">E-transfer</div>
               <div className="flex items-center gap-1 text-sm">
-                <img src="/Edibles/imgi_5_mini-cart-payment-methods.webp" alt="Payment methods" className="h-6" />
+                <img src="/paiement/applePay.png" alt="Apple Pay" className="h-6" />
+                <img src="/paiement/bitcoin.png" alt="Bitcoin" className="h-6" />
+                <img src="/paiement/chime.png" alt="Chime" className="h-6" />
+                <img src="/paiement/zelle.png" alt="Zelle" className="h-6" />
               </div>
             </div>
           </div>
