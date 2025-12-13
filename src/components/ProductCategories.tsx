@@ -4,23 +4,23 @@ import { useNavigate } from "react-router-dom";
 const categories = [
   {
     title: "Flower",
-    image: "public/img/home/flower.png"
+    image: "/img/home/flower.png"
   },
   {
     title: "Pre-Rolls",
-    image: "public/img/home/preRolls.png"
+    image: "/img/home/preRolls.png"
   },
   {
     title: "Edibles",
-    image: "public/img/home/edibles.png"
+    image: "/img/home/edibles.png"
   },
     {
         title: "Drinks",
-        image: "public/img/home/drinks.png"
+        image: "/img/home/drinks.png"
     },
     {
         title: "Vapes",
-        image: "public/img/home/vapes.png"
+        image: "/img/home/vapes.png"
     },
 ];
 

@@ -834,10 +834,10 @@ const ProductCategory = () => {
 
   const categoryDescription =
     category === 'concentrates'
-      ? "Explore our top-tier range of cannabis concentrates in Canada, perfect for users seeking high potency and fast-acting effects. Chronic Guru brings you expertly crafted shatter, budder, hash, and more—all lab-tested and ready to elevate your experience."
+      ? "Explore our top-tier range of cannabis concentrates in Phoenix Arizona, perfect for users seeking high potency and fast-acting effects. Chronic Guru brings you expertly crafted shatter, budder, hash, and more—all lab-tested and ready to elevate your experience."
     : category === 'edibles'
-      ? "Enjoy a delicious twist on cannabis with our wide selection of cannabis edibles in Canada. From THC gummies to chocolates and baked treats, Chronic Guru has everything you need to medicate discreetly and effectively."
-      : "Discover the largest selection of cannabis strains in Canada at Chronic Guru. Our extensive range includes Indica, Sativa, & Hybrid strains, ensuring you find the perfect match for your needs.";
+      ? "Enjoy a delicious twist on cannabis with our wide selection of cannabis edibles in Phoenix Arizona. From THC gummies to chocolates and baked treats, Chronic Guru has everything you need to medicate discreetly and effectively."
+      : "Discover the largest selection of cannabis strains in Phoenix Arizona at Chronic Guru. Our extensive range includes Indica, Sativa, & Hybrid strains, ensuring you find the perfect match for your needs.";
 
   const handleProductClick = (product: any) => {
     const productName = product.name;
@@ -857,7 +857,7 @@ const ProductCategory = () => {
 
       {/* Notice Banner */}
       <div className="bg-red-600 text-white py-2 px-4 text-center text-sm">
-        <strong>Notice:</strong> Notice: Due to an unexpected Canada Post strike, all shipments will now be sent via UPS. Please note that we are unable to deliver to PO Boxes or rural addresses at this time. UPS shipping is a flat rate of $50, with <strong>Free Shipping on orders over $300.</strong> Thank you for your understanding and continued support. If you have any questions or concerns, please don't hesitate to contact us.
+        <strong>Notice:</strong> Notice: Due to an unexpected Phoenix Arizona Post strike, all shipments will now be sent via UPS. Please note that we are unable to deliver to PO Boxes or rural addresses at this time. UPS shipping is a flat rate of $50, with <strong>Free Shipping on orders over $300.</strong> Thank you for your understanding and continued support. If you have any questions or concerns, please don't hesitate to contact us.
       </div>
 
       <main className="py-8">
@@ -1114,7 +1114,7 @@ const ProductCategory = () => {
                     </p>
 
                     <p className="text-muted-foreground">
-                      If you're looking to buy edibles online In Canada, then your search for THC gummies is over. Our premium choices of cannabis-infused edible. You can buy Edibles online from us in a wide selection of different forms, include THC Gummies, Weed Cookies, THC Chocolate Bars as well as THC Tinctures. We are the best place to buy edibles because our products are created with the best quality flowers and concentrates.
+                      If you're looking to buy edibles online In Phoenix Arizona, then your search for THC gummies is over. Our premium choices of cannabis-infused edible. You can buy Edibles online from us in a wide selection of different forms, include THC Gummies, Weed Cookies, THC Chocolate Bars as well as THC Tinctures. We are the best place to buy edibles because our products are created with the best quality flowers and concentrates.
                     </p>
 
                     <p className="text-muted-foreground">
@@ -1137,7 +1137,7 @@ const ProductCategory = () => {
 
                     <p className="text-muted-foreground">
                       <a href="#" className="text-primary hover:underline">Buy weed online</a>{" "}
-                      in Canada at Chronic Guru, your top destination for quality cannabis products. Find the best cannabis store in Canada with our unparalleled selection and expert guidance.
+                      in Phoenix Arizona at Chronic Guru, your top destination for quality cannabis products. Find the best cannabis store in Phoenix Arizona with our unparalleled selection and expert guidance.
                     </p>
 
                     <h3 className="text-xl font-bold text-foreground mt-6">What Is Cannabis?</h3>
