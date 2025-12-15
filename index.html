@@ -29,6 +29,24 @@
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
         })();
+
+        Tawk_API.onChatStarted = function(){
+            const cartSummary = sessionStorage.getItem('tawk_cart_summary');
+            if (cartSummary) {
+                const lines = cartSummary.split('\n');
+                lines.forEach(line => {
+                    if (line.trim() !== '') {
+                        const eventName = line.replace(/[^a-zA-Z0-9 ]/g, "").replace(/\s/g, '-');
+                        Tawk_API.addEvent(eventName, {}, function(error){
+                            if (error) {
+                                console.error(error);
+                            }
+                        });
+                    }
+                });
+                sessionStorage.removeItem('tawk_cart_summary');
+            }
+        };
     </script>
   </body>
 </html>

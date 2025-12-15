@@ -33,7 +33,7 @@ const FAQ = () => {
             <AccordionItem value="item-3">
               <AccordionTrigger>What payment methods do you accept?</AccordionTrigger>
               <AccordionContent>
-                We accept various payment methods including e-transfer, credit cards, and cryptocurrency.
+                We accept various payment methods including credit cards, and cryptocurrency.
               </AccordionContent>
             </AccordionItem>
             

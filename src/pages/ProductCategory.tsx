@@ -557,7 +557,6 @@ export const concentratesProducts = [
         image: "/Online/imgi_78_live-rosin-png.png",
         inStock: true,
         salePercentage: 18,
-        url: "https://chronicguru.com/concentrates/live-rosin-disposable/",
         weightPrices: {
             "1 Unit": 60.00
         }
@@ -573,7 +572,6 @@ export const concentratesProducts = [
         image: "/Online/imgi_82_diamonds-png.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/concentrates/thca-diamonds/",
         weightPrices: {
             "1 Gram": 40.00
         }
@@ -589,7 +587,6 @@ export const concentratesProducts = [
         image: "/Online/imgi_104_hash-png.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/concentrates/hash/",
         weightPrices: {
             "1 Gram": 30.00
         }
@@ -605,7 +602,6 @@ export const concentratesProducts = [
         image: "/Online/imgi_105_CBD-ISOLATE-9-scaled-150x150.jpg",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/concentrates/cbd-isolate/",
         weightPrices: {
             "1 Gram": 6.00
         }
@@ -621,7 +617,6 @@ export const concentratesProducts = [
         image: "/Online/imgi_93_THCA-Cart.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/concentrates/thca-cartridge/",
         weightPrices: {
             "1 Unit": 35.00
         }
@@ -640,7 +635,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_90_60MG-Gummies-Top-Down.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/60mg-gummies/",
         weightPrices: {
             "1 Pack": 45.00
         }
@@ -657,7 +651,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_107_SAMPLE-PACK-PreRollsFlower-WEB_Transparent.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/pre-rolls/sample-pack/",
         weightPrices: {
             "Standard Pack": 35.00,
             "High Tolerance Pack": 40.00
@@ -674,7 +667,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_109_Guava-Gummy-Top-Down-1-1-1024x1024.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/11-15mg-15cbg-gummies/",
         weightPrices: {
             "Small Pack": 25.00,
             "Large Pack": 35.00
@@ -692,7 +684,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_119_Untitled-design-18-1024x1024.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/10mg-gummies/",
         weightPrices: {
             "Small Pack": 20.00,
             "Large Pack": 35.00
@@ -709,7 +700,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_129_Untitled-design-3-1024x1024.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/30mg-gummies/",
         weightPrices: {
             "Small Pack": 20.00,
             "Large Pack": 35.00
@@ -726,7 +716,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_148_Zaza-Brownie-Product-WEB-2.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/zaza-brownie/",
         weightPrices: {
             "1 Unit": 12.00
         }
@@ -742,7 +731,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_158_Stoned-Chunky-Web-ONE.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/zaza-cookie/",
         weightPrices: {
             "1 Unit": 12.00
         }
@@ -758,7 +746,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_168_Pink-Lemonade-WEB.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/pink-lemonade/",
         weightPrices: {
             "30MG": 5.00,
             "150MG": 8.00
@@ -775,7 +762,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_178_Fruit-Punch-Product-WEB-1.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/fruit-punch/",
         weightPrices: {
             "10MG": 5.00,
             "150MG": 8.00
@@ -792,7 +778,6 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_188_Lemonade-Product-WEB.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/lemonade/",
         weightPrices: {
             "30MG": 5.00,
             "150MG": 8.00
@@ -809,23 +794,714 @@ export const ediblesProducts = [
         image: "/Edibles/imgi_198_Iced-Teas-Main-Product-WEB.png",
         inStock: true,
         salePercentage: null,
-        url: "https://chronicguru.com/edibles/iced-tea/",
         weightPrices: {
             "10MG": 5.00,
             "150MG": 8.00
         }
+    },
+    {
+        id: 12,
+        name: "Almond Crunch Bar Chocolate | 500mg CBD | Keo Edibles",
+        category: "Chocolate",
+        priceRange: "$22.00",
+        potency: "500mg CBD",
+        rating: 4.8,
+        reviews: 15,
+        image: "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_15_Almond-crunch-chocolate-bar-500x500.jpg",
+        inStock: true,
+        salePercentage: null,
+        weightPrices: { "1 Unit": 22.00 }
+    },
+    {
+        "id": 13,
+        "name": "Choc’lit Crunch Bar Chocolate | 500mg CBD | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$22.00",
+        "potency": "500mg CBD",
+        "rating": 4.7,
+        "reviews": 12,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_16_KEO-CBD-CHOCOLATE-all-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 22.00 }
+    },
+    {
+        "id": 14,
+        "name": "Cookies ’N’ Crème Chocolate | 500mg CBD | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$22.00",
+        "potency": "500mg CBD",
+        "rating": 4.9,
+        "reviews": 25,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_17_Cookies-n-cream-chocolate-bars-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 22.00 }
+    },
+    {
+        "id": 15,
+        "name": "Fruity Pebbles White Chocolate | 500mg CBD | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$22.00",
+        "potency": "500mg CBD",
+        "rating": 4.8,
+        "reviews": 20,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_18_Fruity-pebbles-chocolate-bar-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 22.00 }
+    },
+    {
+        "id": 16,
+        "name": "THC-Infused Beef Jerky – Bold Flavor Meets Relaxation",
+        "category": "Jerky",
+        "priceRange": "$20.00",
+        "potency": "High Potency",
+        "rating": 4.7,
+        "reviews": 30,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_19_beef-jerky--500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 20.00 }
+    },
+    {
+        "id": 17,
+        "name": "Keo’Pops Lollipops | 40mg THC | Keo Edibles",
+        "category": "Candy",
+        "priceRange": "$5.00",
+        "potency": "40mg THC",
+        "rating": 4.5,
+        "reviews": 40,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_20_keo-3-lollipops-design-2-edited-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 5.00 }
+    },
+    {
+        "id": 18,
+        "name": "S’mores Cookie Brownies | 400mg THC | Keo Edibles",
+        "category": "Brownie",
+        "priceRange": "$22.00",
+        "potency": "400mg THC",
+        "rating": 4.9,
+        "reviews": 28,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_21_KEO_cookie_new5-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 22.00 }
+    },
+    {
+        "id": 19,
+        "name": "1:1 Black Cherry ZzZ Bomb Indica | 1:1 40MG | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "1:1 40MG",
+        "rating": 4.64,
+        "reviews": 98,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_22_black-cherry-thc-cbd-1-1-twisted-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 20,
+        "name": "1:1 Cara Melts | Indica | 40mg CBD:THC | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$13.00",
+        "potency": "40mg CBD:THC",
+        "rating": 4.68,
+        "reviews": 57,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_23_TwistedCaraIndica1to1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 21,
+        "name": "1:1 Cara Melts | Sativa | 40mg CBD:THC | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$13.00",
+        "potency": "40mg CBD:THC",
+        "rating": 4.76,
+        "reviews": 38,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_24_TwistedCaraSativa1to1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 15,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 22,
+        "name": "1:1 Halley’s Comet Grape Jelly Bomb | Sativa | 1:1 40MG | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "1:1 40MG",
+        "rating": 4.82,
+        "reviews": 51,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_25_TwistedExtractsGrapeHalleysNEW-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 15,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 23,
+        "name": "1:1 Halley’s Comet Watermelon Jelly Bomb | Sativa | 1:1 40MG | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "1:1 40MG",
+        "rating": 4.88,
+        "reviews": 49,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_26_TwistedExtractsWatermelonHalleysNEW-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 24,
+        "name": "1:1 Mango Jelly Bomb | Sativa | 1:1 40MG | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "1:1 40MG",
+        "rating": 4.73,
+        "reviews": 71,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_27_1-1-mango-sativa-jelly-twisted-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 25,
+        "name": "1:1 Orange Jelly Bomb | Sativa | 1:1 40MG | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "1:1 40MG",
+        "rating": 4.73,
+        "reviews": 56,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_28_1-1-Orange-sativa-jelly-twisted-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 10,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 26,
+        "name": "1:1 THC:CBD Tincture Drops | Indica | Keo Edibles",
+        "category": "Tincture",
+        "priceRange": "$36.00 - $90.00",
+        "potency": "Varies",
+        "rating": 4.85,
+        "reviews": 53,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_29_buy-cbd-thc-2000mg-tincture-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "Small": 36.00, "Large": 90.00 }
+    },
+    {
+        "id": 27,
+        "name": "1:1 Tincture Drops Orange | Indica | 600mg CBD & 600mg THC | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$90.00",
+        "potency": "600mg CBD & 600mg THC",
+        "rating": 5.00,
+        "reviews": 9,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_30_TE-EXTRASTRENGTH-1-1-INDICA-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 90.00 }
+    },
+    {
+        "id": 28,
+        "name": "1:1 Tincture Drops Orange | Sativa | 600mg CBD & 600mg THC | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$90.00",
+        "potency": "600mg CBD & 600mg THC",
+        "rating": 4.89,
+        "reviews": 18,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_31_TE-EXTRASTRENGTH-1-1-SATIVA-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 90.00 }
+    },
+    {
+        "id": 29,
+        "name": "1:1 Tincture Drops | Sativa | 150mg CBD & 150mg THC | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$50.00",
+        "potency": "150mg CBD & 150mg THC",
+        "rating": 4.97,
+        "reviews": 37,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_32_TE_Drops_Sativa1to1combo-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 50.00 }
+    },
+    {
+        "id": 30,
+        "name": "3:1 Tincture Drops | Sativa | 225mg CBD & 75mg THC | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$50.00",
+        "potency": "225mg CBD & 75mg THC",
+        "rating": 4.97,
+        "reviews": 30,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_33_TE_Drops_Sativa3to1combo-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 23,
+        "weightPrices": { "1 Unit": 50.00 }
+    },
+    {
+        "id": 31,
+        "name": "30 CBD Oil Tincture Drops | 900mg CBD | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$70.00",
+        "potency": "900mg CBD",
+        "rating": 5.00,
+        "reviews": 13,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_34_TE_Drops_CBD30combo-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 70.00 }
+    },
+    {
+        "id": 32,
+        "name": "50 CBD Oil Tincture Drops | 1500mg CBD | Twisted Extracts",
+        "category": "Tincture",
+        "priceRange": "$85.00",
+        "potency": "1500mg CBD",
+        "rating": 5.00,
+        "reviews": 4,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_8_CBD-50-Orange-Flavour-Drops-30ml-scaled-1-600x600-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 6,
+        "weightPrices": { "1 Unit": 85.00 }
+    },
+    {
+        "id": 33,
+        "name": "Apple & Watermelon Puzzle Gummies | 240mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "240mg",
+        "rating": 4.70,
+        "reviews": 129,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_35_watermelon1-scaled-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 34,
+        "name": "Apple Jelly Bomb | Sativa | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 4.70,
+        "reviews": 73,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_36_apple-sativa-jelly-bomb-twisted-extracts-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 35,
+        "name": "Aurora Milk Chocolate | 500mg | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$26.00",
+        "potency": "500mg",
+        "rating": 4.82,
+        "reviews": 33,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_37_buy-keo-chocolate-aurora-milk-chocolate-copy-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 35,
+        "weightPrices": { "1 Unit": 26.00 }
+    },
+    {
+        "id": 36,
+        "name": "Black Cherry Indica ZzZ Bomb | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 4.78,
+        "reviews": 90,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_38_black-cherry-indica-cannabis-edibles-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 37,
+        "name": "Salted Cara Melts | 300mg CBD | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$30.00",
+        "potency": "300mg CBD",
+        "rating": 5.00,
+        "reviews": 9,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_39_SALTEDCaramelts_CBD-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 30.00 }
+    },
+    {
+        "id": 38,
+        "name": "Cara Melts | Indica | 80mg THC | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$13.00",
+        "potency": "80mg THC",
+        "rating": 4.75,
+        "reviews": 44,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_40_cara-melts-indica-caramel-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 39,
+        "name": "Cara Melts | Sativa | 80mg THC | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$13.00",
+        "potency": "80mg THC",
+        "rating": 4.63,
+        "reviews": 48,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_41_TwistedCaraSativa-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 40,
+        "name": "Salted Cara Melts | Sativa | 300mg THC | Twisted Extracts",
+        "category": "Caramel",
+        "priceRange": "$30.00",
+        "potency": "300mg THC",
+        "rating": 5.00,
+        "reviews": 5,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_42_SALTEDCaramelts_Sativa-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 17,
+        "weightPrices": { "1 Unit": 30.00 }
+    },
+    {
+        "id": 41,
+        "name": "CBD Oil Tinctures | Keo Edibles",
+        "category": "Tincture",
+        "priceRange": "$50.00 - $80.00",
+        "potency": "Varies",
+        "rating": 4.75,
+        "reviews": 84,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_43_buy-cbd-2000mg-tincture-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "Small": 50.00, "Large": 80.00 }
+    },
+    {
+        "id": 42,
+        "name": "Cherry & Cola Puzzle Gummies | 240mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "240mg",
+        "rating": 4.53,
+        "reviews": 107,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_44_WhatsApp-Image-2020-09-22-at-1.55.18-PM-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 43,
+        "name": "Cherry Jelly Bomb | Sativa | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 4.73,
+        "reviews": 92,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_45_cherry-sativa-twisted-extracts-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 44,
+        "name": "Cookies ’N’ Crème Chocolate | 500mg | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$26.00",
+        "potency": "500mg",
+        "rating": 4.88,
+        "reviews": 32,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_46_buy-keo-chocolate-cookie-and-cream-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 35,
+        "weightPrices": { "1 Unit": 26.00 }
+    },
+    {
+        "id": 45,
+        "name": "Fruit Punch Indica ZzZ Bomb | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 5.00,
+        "reviews": 12,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_47_fruit-punch-jelly-bomb-thc--500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 46,
+        "name": "Green Tea Crisp Chocolate | 500 mg | Keo Edibles",
+        "category": "Chocolate",
+        "priceRange": "$25.00",
+        "potency": "500mg",
+        "rating": 5.00,
+        "reviews": 21,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_48_buy-keo-chocolate-green-tea-crisp-copy-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 38,
+        "weightPrices": { "1 Unit": 25.00 }
+    },
+    {
+        "id": 47,
+        "name": "Hawaiian Island & Blue Raspberry Puzzle CBD Gummies | 500mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$14.00",
+        "potency": "500mg",
+        "rating": 4.96,
+        "reviews": 53,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_49_bluekeo-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 14.00 }
+    },
+    {
+        "id": 48,
+        "name": "Lychee & Kiwi Puzzle CBD Gummies | 240mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$11.00",
+        "potency": "240mg",
+        "rating": 4.73,
+        "reviews": 88,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_50_Keo-kiwifruit-lychees-edibles-scaled-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 27,
+        "weightPrices": { "1 Unit": 11.00 }
+    },
+    {
+        "id": 49,
+        "name": "Macadamia Nut White Chocolate THC Cookie | 400mg THC | Keo Edibles",
+        "category": "Cookie",
+        "priceRange": "$24.00",
+        "potency": "400mg THC",
+        "rating": 4.94,
+        "reviews": 35,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_51_Keo-cookie-macadamia-nut-white-chocolate-cookies-copy-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 24.00 }
+    },
+    {
+        "id": 50,
+        "name": "Mango and Blue Raspberry Puzzle Gummies | 240mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "240mg",
+        "rating": 4.59,
+        "reviews": 96,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_52_WhatsApp-Image-2020-09-22-at-1.55.18-PM-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 51,
+        "name": "Mango Jelly Bomb | Sativa | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 4.55,
+        "reviews": 67,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_53_mango-sativa-twisted-cannabis-edible-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 52,
+        "name": "Orange Jelly Bomb | Sativa | 80mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "80mg THC",
+        "rating": 4.80,
+        "reviews": 65,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_54_orange-jelly-bomb-sativa-twisted-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 53,
+        "name": "Peach & Grape Puzzle Gummies | 240mg | Keo Edibles",
+        "category": "Gummy",
+        "priceRange": "$12.00",
+        "potency": "240mg",
+        "rating": 4.54,
+        "reviews": 96,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_55_WhatsApp-Image-2020-09-22-at-1.55.18-PM-2-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 20,
+        "weightPrices": { "1 Unit": 12.00 }
+    },
+    {
+        "id": 54,
+        "name": "Peach Jelly Bomb | 80mg CBD | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$13.00",
+        "potency": "80mg CBD",
+        "rating": 4.86,
+        "reviews": 85,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_56_peach-cbd-jelly-twisted-extracts-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 55,
+        "name": "Pet CBD Oil Tinctures | 250mg CBD | Keo Edibles",
+        "category": "Tincture",
+        "priceRange": "$40.00",
+        "potency": "250mg CBD",
+        "rating": 5.00,
+        "reviews": 29,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_57_buy-keo-tincture-for-small-pets-copy-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 12,
+        "weightPrices": { "1 Unit": 40.00 }
+    },
+    {
+        "id": 56,
+        "name": "Pet CBD Oil Tinctures | 500mg CBD | Keo Edibles",
+        "category": "Tincture",
+        "priceRange": "$50.00",
+        "potency": "500mg CBD",
+        "rating": 4.97,
+        "reviews": 33,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_58_buy-keo-tincture-for-large-pets-copy-500x500.jpg",
+        "inStock": true,
+        "salePercentage": 10,
+        "weightPrices": { "1 Unit": 50.00 }
+    },
+    {
+        "id": 57,
+        "name": "Pineapple Jelly Bomb | 80mg CBD | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$13.00",
+        "potency": "80mg CBD",
+        "rating": 4.81,
+        "reviews": 63,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_59_pineapple-cbd-jelly-twisted-extracts-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 13.00 }
+    },
+    {
+        "id": 58,
+        "name": "Cherry Fruit Gummies | Extreme Strength | Sativa | 1600mg THC | High Dose",
+        "category": "Gummy",
+        "priceRange": "$70.00",
+        "potency": "1600mg THC",
+        "rating": 5.00,
+        "reviews": 4,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_60_HighDoseMaster1600Sativa-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 70.00 }
+    },
+    {
+        "id": 59,
+        "name": "Cherry Fruit Gummies | Super Strength | Sativa | 800mg THC | High Dose",
+        "category": "Gummy",
+        "priceRange": "$40.00",
+        "potency": "800mg THC",
+        "rating": 5.00,
+        "reviews": 5,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_61_HighDoseMaster800Sativa-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 40.00 }
+    },
+    {
+        "id": 60,
+        "name": "Indica Jelly Bites | Berry Mix | 100mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$15.00",
+        "potency": "100mg THC",
+        "rating": 5.00,
+        "reviews": 3,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_62_JellyBite_100mg_INDICA-1-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 15.00 }
+    },
+    {
+        "id": 61,
+        "name": "Indica Jelly Bites | Berry Mix | 500mg THC | Twisted Extracts",
+        "category": "Gummy",
+        "priceRange": "$30.00",
+        "potency": "500mg THC",
+        "rating": 4.60,
+        "reviews": 5,
+        "image": "/Cannabis Edibles - Gummies, Chocolates, & More _ Bulk Buddy/imgi_63_JellyBite_500mg_Indica-500x500.jpg",
+        "inStock": true,
+        "salePercentage": null,
+        "weightPrices": { "1 Unit": 30.00 }
     }
 ];
+
+const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
+  return (
+    <nav className="mt-8">
+      <ul className="flex justify-center items-center space-x-2">
+        <li>
+          <Button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
+            Previous
+          </Button>
+        </li>
+        {pageNumbers.map(number => (
+          <li key={number}>
+            <Button
+              onClick={() => paginate(number)}
+              variant={currentPage === number ? 'default' : 'outline'}
+            >
+              {number}
+            </Button>
+          </li>
+        ))}
+        <li>
+          <Button onClick={() => paginate(currentPage + 1)} disabled={currentPage === pageNumbers.length}>
+            Next
+          </Button>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 const ProductCategory = () => {
   const { category } = useParams();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const navigate = useNavigate();
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(35);
 
   const products =
     category === 'concentrates' ? concentratesProducts :
     category === 'edibles' ? ediblesProducts :
     cannabisProducts;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentProducts = products.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const categoryTitle =
     category === 'concentrates' ? 'Cannabis Concentrates' :
@@ -929,13 +1605,14 @@ const ProductCategory = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-sm text-foreground">Show:</span>
-                    <Select defaultValue="50">
+                    <Select defaultValue={String(itemsPerPage)} onValueChange={(value) => setItemsPerPage(Number(value))}>
                       <SelectTrigger className="w-24">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="12">12 items</SelectItem>
                         <SelectItem value="24">24 items</SelectItem>
+                        <SelectItem value="35">35 items</SelectItem>
                         <SelectItem value="50">50 items</SelectItem>
                       </SelectContent>
                     </Select>
@@ -965,7 +1642,7 @@ const ProductCategory = () => {
               <div>
                 {/* Product Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-                  {products.map((product) => (
+                  {currentProducts.map((product) => (
                     <div
                       key={product.id}
                       className="group relative bg-card rounded-lg border hover:shadow-lg transition-all duration-300 overflow-hidden"
@@ -1067,6 +1744,12 @@ const ProductCategory = () => {
                     </div>
                   ))}
                 </div>
+                <Pagination
+                    itemsPerPage={itemsPerPage}
+                    totalItems={products.length}
+                    paginate={paginate}
+                    currentPage={currentPage}
+                />
               </div>
 
               {/* Description */}

@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { Button } from "@/components/ui/button";
 
+declare global {
+    interface Window {
+        Tawk_API: any;
+    }
+}
+
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, clearCart } = useCart();
   const isCartEmpty = cartItems.length === 0;
@@ -13,10 +19,15 @@ const Cart = () => {
   const shipping = subtotal > 150 ? 0 : 10; // Exemple: livraison gratuite au-dessus de 150$
   const total = subtotal + shipping;
 
-  const whatsappNumber = "18137207509"; // Numéro WhatsApp fourni par l'utilisateur
-  const cartSummary = cartItems.map(item => `${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`).join("\n");
-  const message = `Hello, I'd like to place an order.\n\nMy Cart:\n${cartSummary}\n\nSubtotal: $${subtotal.toFixed(2)}\nShipping: ${shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}\nTotal: $${total.toFixed(2)}\n\nPlease confirm my order.`;
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const handleCheckout = () => {
+    if (window.Tawk_API) {
+        const cartSummary = cartItems.map(item => `${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`).join("\n");
+        const message = `My Cart:\n${cartSummary}\n\nSubtotal: $${subtotal.toFixed(2)}\nShipping: ${shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}\nTotal: $${total.toFixed(2)}`;
+
+        sessionStorage.setItem('tawk_cart_summary', message);
+        window.Tawk_API.maximize();
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -96,10 +107,8 @@ const Cart = () => {
                       <span>${total.toFixed(2)}</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-6" asChild>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                      Proceed to Checkout
-                    </a>
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-6" onClick={handleCheckout}>
+                    Proceed to Checkout
                   </Button>
                 </div>
               </div>
