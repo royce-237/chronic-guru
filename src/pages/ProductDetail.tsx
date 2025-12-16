@@ -170,7 +170,7 @@ const ProductDetail = () => {
       
       {/* Notice Banner */}
       <div className="bg-red-600 text-white py-2 px-4 text-center text-sm">
-        <strong>Notice:</strong> Notice: Due to an unexpected Canada Post strike, all shipments will now be sent via UPS. Please note that we are unable to deliver to PO Boxes or rural addresses at this time. UPS shipping is a flat rate of $50, with <strong>Free Shipping on orders over $300.</strong> Thank you for your understanding and continued support. If you have any questions or concerns, please don't hesitate to contact us.
+        <strong>Notice:</strong> Notice: Due to an unexpected Phoenix Arizona Post strike, all shipments will now be sent via UPS. Please note that we are unable to deliver to PO Boxes or rural addresses at this time. UPS shipping is a flat rate of $50, with <strong>Free Shipping on orders over $300.</strong> Thank you for your understanding and continued support. If you have any questions or concerns, please don't hesitate to contact us.
       </div>
 
       <main className="py-8">
@@ -429,7 +429,7 @@ const ProductDetail = () => {
               <TabsContent value="description" className="mt-6">
                 <div className="prose prose-sm max-w-none">
                   <h2 className="text-2xl font-bold text-foreground mb-4">
-                    Buy {product.name} Exclusively At Chronic Guru's Curated Online Dispensary Canada.
+                    Buy {product.name} Exclusively At Chronic Guru's Curated Online Dispensary Phoenix Arizona.
                   </h2>
                   <p className="text-muted-foreground">{product.description}</p>
                 </div>

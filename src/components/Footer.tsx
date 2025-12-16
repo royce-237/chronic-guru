@@ -222,7 +222,6 @@ const Footer = () => {
               Copyright 2024 © Chronic Guru. All Rights Reserved.
             </p>
             <div className="flex items-center gap-2">
-              <div className="bg-primary/10 px-3 py-1 rounded text-xs font-medium">E-transfer</div>
               <div className="flex items-center gap-1 text-sm">
                 <img src="/paiement/applePay.png" alt="Apple Pay" className="h-6" />
                 <img src="/paiement/bitcoin.png" alt="Bitcoin" className="h-6" />

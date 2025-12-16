@@ -26,7 +26,7 @@ const FAQ = () => {
             <AccordionItem value="item-2">
               <AccordionTrigger>What are your shipping options?</AccordionTrigger>
               <AccordionContent>
-                We offer free express shipping on orders over $150. Standard shipping is available for all orders across Canada.
+                We offer free express shipping on orders over $150. Standard shipping is available for all orders across Phoenix Arizona.
               </AccordionContent>
             </AccordionItem>
             

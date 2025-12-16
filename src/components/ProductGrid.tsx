@@ -285,7 +285,7 @@ const ProductGrid = () => {
                   <Button
                     variant="hero"
                     size="sm"
-                    className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white"
                     onClick={() => handleProductClick(product, category)}
                   >
                     <ShoppingCart className="h-4 w-4 mr-2" />

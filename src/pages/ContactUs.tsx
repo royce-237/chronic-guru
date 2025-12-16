@@ -93,7 +93,7 @@ const ContactUs = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <div>
-                  <p className="text-sm text-muted-foreground">Canada</p>
+                  <p className="text-sm text-muted-foreground">Phoenix Arizona</p>
                   <p className="font-semibold text-foreground">Chronic Guru</p>
                 </div>
               </div>

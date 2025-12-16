@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
           <div className="flex justify-between items-center mb-6">
             <div>
               <h3 className="text-2xl font-bold text-foreground">Trust Index Reviews</h3>
-              <p className="text-muted-foreground">Shared experiences from customers from all over Canada!</p>
+              <p className="text-muted-foreground">Shared experiences from customers from all over Phoenix Arizona!</p>
             </div>
             <Button variant="outline">
               Write a Review →
